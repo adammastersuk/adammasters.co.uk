@@ -12,9 +12,9 @@ export type BuildProject = {
 export const buildProjects: BuildProject[] = [
   {
     title: 'This Website',
-    what: 'A modern personal website built in Next.js to articulate professional direction and ongoing experiments.',
-    why: 'To create a clear digital home that reflects 80% professional credibility with 20% personal depth.',
-    learned: 'Clarity improves trust. A structured content model also makes future updates significantly easier.',
+    what: 'A personal site built in Next.js to share my work, projects, and what I am learning in public.',
+    why: 'I wanted one place that feels credible, clear, and genuinely mine.',
+    learned: 'Clear writing builds trust, and a simple content model makes updates easier to sustain.',
     links: [
       { label: 'Repository (placeholder)', href: '#' },
       { label: 'Changelog (placeholder)', href: '#' }
@@ -22,9 +22,9 @@ export const buildProjects: BuildProject[] = [
   },
   {
     title: 'Investigating OpenClaw',
-    what: 'A research and prototyping track to explore OpenClaw capabilities and potential practical applications.',
-    why: 'To stay close to frontier tools and understand where they can support operational workflows.',
-    learned: 'Discovery work benefits from constraints, short notes, and regular synthesis points.',
+    what: 'An ongoing research and prototype track to understand OpenClaw and where it might be useful.',
+    why: 'I like staying close to emerging tools before the use cases become obvious.',
+    learned: 'Exploration improves when I work in short loops and write down what surprised me.',
     links: [
       { label: 'Notes (placeholder)', href: '#' },
       { label: 'Prototype (placeholder)', href: '#' }
@@ -32,9 +32,9 @@ export const buildProjects: BuildProject[] = [
   },
   {
     title: 'Mama to Minis Website Project',
-    what: 'A practical website support project for Mama to Minis with focus on clarity and conversion flow.',
-    why: 'To apply ecommerce and systems thinking in a lean, real-world setting with direct feedback loops.',
-    learned: 'Simple UX decisions can remove friction and make small businesses easier to navigate.',
+    what: 'Hands-on website support for Mama to Minis, with attention on clarity and conversion flow.',
+    why: 'It lets me apply ecommerce thinking in a lean setting with direct feedback from real users.',
+    learned: 'Small UX decisions often create the biggest lift in confidence and ease.',
     links: [
       { label: 'Project brief (placeholder)', href: '#' },
       { label: 'Preview (placeholder)', href: '#' }

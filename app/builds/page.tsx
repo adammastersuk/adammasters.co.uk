@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function BuildsPage() {
   return (
-    <Section title="Builds" intro="Practical projects built to sharpen thinking, test tools, and create utility.">
+    <Section title="Builds" intro="I build to think clearly, test ideas quickly, and leave myself something useful at the end.">
       <p className="max-w-3xl text-base leading-relaxed text-slate-600">
-        Most of these projects start as questions. I build to understand, not just to ship.
+        Most projects begin as a simple question. Building is how I find better answers.
       </p>
       <div className="grid gap-5 md:grid-cols-2">
         {buildProjects.map((project) => (
