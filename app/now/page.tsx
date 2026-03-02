@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 
 export default function NowPage() {
   return (
-    <Section title="Now" intro="A concise snapshot of what currently has my attention.">
+    <Section title="Now" intro="What I&apos;m giving most of my attention to right now.">
       <div className="grid gap-5 md:grid-cols-2">
         <Card>
           <h3 className="font-semibold text-slate-900">Work</h3>
-          <p className="mt-2 text-sm text-slate-600">Strengthening trading rhythm and operational clarity at Bents.</p>
+          <p className="mt-2 text-sm text-slate-600">Strengthening trade rhythm and operational clarity at Bents.</p>
         </Card>
         <Card>
           <h3 className="font-semibold text-slate-900">Builds</h3>
-          <p className="mt-2 text-sm text-slate-600">Iterating on this site and exploring practical AI-adjacent project ideas.</p>
+          <p className="mt-2 text-sm text-slate-600">Iterating on this site and testing practical AI-adjacent project ideas.</p>
         </Card>
         <Card>
           <h3 className="font-semibold text-slate-900">Music</h3>
-          <p className="mt-2 text-sm text-slate-600">Re-establishing consistent guitar practice with monthly recording checkpoints.</p>
+          <p className="mt-2 text-sm text-slate-600">Rebuilding consistent guitar practice with monthly recording checkpoints.</p>
         </Card>
         <Card>
           <h3 className="font-semibold text-slate-900">Learning</h3>

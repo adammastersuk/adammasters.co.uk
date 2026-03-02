@@ -13,22 +13,21 @@ export default function MusicPage() {
     <>
       <Section
         title="Music"
-        intro="Music is a core foundation. I hold a music degree in guitar, and structured practice continues to shape how I learn and build."
+        intro="Music shaped how I listen, how I practice, and how I approach progress in every part of life."
       >
         <p className="max-w-3xl text-base leading-relaxed text-slate-600">
-          Music was my first discipline. After time away, I&apos;m returning to it deliberately — rebuilding consistency
-          and sharing progress publicly.
+          It was my first discipline. Coming back to guitar has reminded me that consistency matters more than intensity.
         </p>
         <Card>
           <h3 className="text-xl font-semibold text-slate-900">Return to Practice</h3>
           <p className="mt-3 leading-relaxed text-slate-600">
-            I&apos;m deliberately rebuilding consistency through short, focused sessions and regular review, balancing
-            technique, repertoire, and creative output.
+            I&apos;m rebuilding through short, focused sessions and regular review, balancing technique, repertoire, and
+            creative output.
           </p>
         </Card>
       </Section>
 
-      <Section title="Structured Practice Themes">
+      <Section title="Practice Themes">
         <div className="grid gap-5 md:grid-cols-3">
           {musicThemes.map((theme) => (
             <Card key={theme.title}>
@@ -39,7 +38,7 @@ export default function MusicPage() {
         </div>
       </Section>
 
-      <Section title="Recordings & Covers" intro="A placeholder section for published clips, covers, and progress snapshots.">
+      <Section title="Recordings & Covers" intro="I&apos;ll share clips here as I keep showing up to practice.">
         <Card>
           <p className="text-slate-600">Media collection coming soon.</p>
         </Card>

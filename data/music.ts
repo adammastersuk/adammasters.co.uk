@@ -6,14 +6,14 @@ export type MusicTheme = {
 export const musicThemes: MusicTheme[] = [
   {
     title: 'Technique and touch',
-    description: 'Reinforcing fundamentals in articulation, timing, and tone through focused daily drills.'
+    description: 'I revisit articulation, timing, and tone through focused daily drills.'
   },
   {
     title: 'Repertoire rebuilding',
-    description: 'Revisiting core pieces and building a practical, enjoyable set list again.'
+    description: 'I return to core pieces while building a set list I actually enjoy playing.'
   },
   {
     title: 'Creative output',
-    description: 'Keeping space for covers and short recordings to turn practice into published work.'
+    description: 'I keep space for covers and short recordings so practice leads to shared work.'
   }
 ];

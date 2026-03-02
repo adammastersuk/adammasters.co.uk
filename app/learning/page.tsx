@@ -12,10 +12,10 @@ export default function LearningPage() {
   return (
     <Section
       title="Learning Sprints"
-      intro="Structured learning experiments that combine clear goals with consistent practice and measurable checkpoints."
+      intro="I use short learning sprints to stay sharp, follow curiosity, and build consistency over time."
     >
       <p className="max-w-3xl text-base leading-relaxed text-slate-600">
-        Not everything I learn needs to be useful. Some skills are practiced simply because they sharpen focus.
+        Not everything I learn has to be practical. Sometimes the point is simply to pay attention and improve.
       </p>
       <div className="grid gap-5 md:grid-cols-2">
         {learningSprints.map((sprint) => (

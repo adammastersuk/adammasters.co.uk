@@ -6,28 +6,28 @@ import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Senior E-Commerce Executive at Bents with a systems mindset and curiosity-led builder practice.'
+  description: 'Senior E-Commerce Executive at Bents, with a builder practice shaped by curiosity and practical systems.'
 };
 
 const pillars = [
   {
     title: 'Work',
-    description: 'Senior E-Commerce Executive at Bents focused on operations, trading, systems, and leadership.',
+    description: 'I lead e-commerce at Bents, balancing trading performance, day-to-day execution, and team direction.',
     href: '/work'
   },
   {
     title: 'Builds',
-    description: 'Small practical tools and digital projects built through structured experimentation.',
+    description: 'I build small tools to test ideas, learn faster, and make useful things from open questions.',
     href: '/builds'
   },
   {
     title: 'Music',
-    description: 'Music is foundational: degree-level guitar training and an intentional return to practice.',
+    description: 'Music trained my ear for detail, and returning to guitar is teaching me patience again.',
     href: '/music'
   },
   {
     title: 'Learning',
-    description: 'Learning sprints designed around clear goals, cadence, and measurable progression.',
+    description: 'I run focused learning sprints to stay curious, stretch my thinking, and keep momentum.',
     href: '/learning'
   }
 ];
@@ -46,13 +46,13 @@ export default function HomePage() {
   <span>Systems &amp; AI Workflow Builder</span>
 </div>
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-            E-commerce by trade. Driven by curiosity.
+            E-commerce by trade. Curious by nature.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-            I lead e-commerce at Bents, focused on trading, systems, and operational clarity. Outside work, I build small tools and explore AI workflows that make complex things simpler.
+            I lead e-commerce at Bents, where my focus is trading, systems, and clear execution. Outside work, I build small tools and explore AI workflows that can make messy work feel simpler.
           </p>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-            I build deliberately — in commerce, in code, and in practice.
+            I care about steady progress, useful systems, and doing good work without noise.
           </p>
           <Link
             href="/now"
@@ -60,11 +60,11 @@ export default function HomePage() {
           >
             See what I&apos;m focused on now
           </Link>
-          
+
         </Container>
       </Section>
 
-      <Section title="Explore" intro="A calm and structured overview of my professional work and personal foundations.">
+      <Section title="Explore" intro="This is where I share what I&apos;m working on, what I&apos;m practicing, and what I&apos;m learning along the way.">
         <div className="grid gap-5 md:grid-cols-2">
           {pillars.map((pillar) => (
             <Card key={pillar.title}>

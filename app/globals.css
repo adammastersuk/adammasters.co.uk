@@ -13,3 +13,7 @@ body {
 a {
   @apply transition-colors;
 }
+
+main > .editorial-section:nth-of-type(even) {
+  background-color: rgba(247, 246, 242, 0.55);
+}
