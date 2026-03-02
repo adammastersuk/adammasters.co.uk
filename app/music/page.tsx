@@ -15,6 +15,10 @@ export default function MusicPage() {
         title="Music"
         intro="Music is a core foundation. I hold a music degree in guitar, and structured practice continues to shape how I learn and build."
       >
+        <p className="max-w-3xl text-base leading-relaxed text-slate-600">
+          Music was my first discipline. After time away, I&apos;m returning to it deliberately — rebuilding consistency
+          and sharing progress publicly.
+        </p>
         <Card>
           <h3 className="text-xl font-semibold text-slate-900">Return to Practice</h3>
           <p className="mt-3 leading-relaxed text-slate-600">

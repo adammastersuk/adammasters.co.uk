@@ -14,6 +14,9 @@ export default function WorkPage() {
         title="Work"
         intro="Senior E-Commerce Executive at Bents, focused on operational excellence, scalable systems, and sustainable growth."
       >
+        <p className="max-w-2xl text-base leading-relaxed text-slate-600">
+          I&apos;m drawn to complexity — but only when it can be simplified and improved.
+        </p>
         <Card>
           <h3 className="text-xl font-semibold text-slate-900">Role Summary</h3>
           <p className="mt-3 leading-relaxed text-slate-600">

@@ -51,6 +51,9 @@ export default function HomePage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
             I lead e-commerce at Bents, focused on trading, systems, and operational clarity. Outside work, I build small tools and explore AI workflows that make complex things simpler.
           </p>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+            I build deliberately — in commerce, in code, and in practice.
+          </p>
           <Link
             href="/now"
             className="mt-8 inline-flex rounded-full border border-slate-300 px-6 py-3 text-sm font-medium text-slate-800 hover:border-slate-400"
