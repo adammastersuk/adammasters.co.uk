@@ -14,6 +14,9 @@ export default function LearningPage() {
       title="Learning Sprints"
       intro="Structured learning experiments that combine clear goals with consistent practice and measurable checkpoints."
     >
+      <p className="max-w-3xl text-base leading-relaxed text-slate-600">
+        Not everything I learn needs to be useful. Some skills are practiced simply because they sharpen focus.
+      </p>
       <div className="grid gap-5 md:grid-cols-2">
         {learningSprints.map((sprint) => (
           <Card key={sprint.title}>

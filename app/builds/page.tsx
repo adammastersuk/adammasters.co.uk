@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 export default function BuildsPage() {
   return (
     <Section title="Builds" intro="Practical projects built to sharpen thinking, test tools, and create utility.">
+      <p className="max-w-3xl text-base leading-relaxed text-slate-600">
+        Most of these projects start as questions. I build to understand, not just to ship.
+      </p>
       <div className="grid gap-5 md:grid-cols-2">
         {buildProjects.map((project) => (
           <Card key={project.title} className="flex h-full flex-col">
