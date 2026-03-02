@@ -38,12 +38,18 @@ export default function HomePage() {
       <Section className="pb-8 pt-20 md:pt-28">
         <Container>
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Adam Masters</p>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600">
+  <span>Senior E-Commerce Executive at Bents Garden &amp; Home</span>
+  <span className="hidden sm:inline">•</span>
+  <span>Music Degree (Guitar)</span>
+  <span className="hidden sm:inline">•</span>
+  <span>Systems &amp; AI Workflow Builder</span>
+</div>
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-            E-commerce by trade. Builder by curiosity.
+            E-commerce by trade. Driven by curiosity.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-            I lead ecommerce at Bents and spend my personal build time exploring systems, AI workflows, and small tools
-            that improve clarity.
+            I lead e-commerce at Bents, focused on trading, systems, and operational clarity. Outside work, I build small tools and explore AI workflows that make complex things simpler.
           </p>
           <Link
             href="/now"
@@ -51,6 +57,7 @@ export default function HomePage() {
           >
             See what I&apos;m focused on now
           </Link>
+          
         </Container>
       </Section>
 
