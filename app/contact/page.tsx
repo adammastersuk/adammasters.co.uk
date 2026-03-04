@@ -16,10 +16,10 @@ export default function ContactPage() {
             <span className="font-medium text-slate-800">Email:</span> your.email@example.com
           </p>
           <p>
-            <span className="font-medium text-slate-800">GitHub:</span> github.com/your-handle
+            <span className="font-medium text-slate-800">GitHub:</span> <a href="https://github.com/adammastersuk">github.com/adammastersuk</a>
           </p>
           <p>
-            <span className="font-medium text-slate-800">LinkedIn:</span> linkedin.com/in/your-handle
+            <span className="font-medium text-slate-800">LinkedIn:</span> <a href="https://www.linkedin.com/in/adammasters-digital" target="_blank">linkedin.com/in/adammasters-digital</a>
           </p>
         </div>
       </Card>

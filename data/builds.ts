@@ -20,24 +20,4 @@ export const buildProjects: BuildProject[] = [
       { label: 'Changelog (placeholder)', href: '#' }
     ]
   },
-  {
-    title: 'Investigating OpenClaw',
-    what: 'An ongoing research and prototype track to understand OpenClaw and where it might be useful.',
-    why: 'I like staying close to emerging tools before the use cases become obvious.',
-    learned: 'Exploration improves when I work in short loops and write down what surprised me.',
-    links: [
-      { label: 'Notes (placeholder)', href: '#' },
-      { label: 'Prototype (placeholder)', href: '#' }
-    ]
-  },
-  {
-    title: 'Mama to Minis Website Project',
-    what: 'Hands-on website support for Mama to Minis, with attention on clarity and conversion flow.',
-    why: 'It lets me apply ecommerce thinking in a lean setting with direct feedback from real users.',
-    learned: 'Small UX decisions often create the biggest lift in confidence and ease.',
-    links: [
-      { label: 'Project brief (placeholder)', href: '#' },
-      { label: 'Preview (placeholder)', href: '#' }
-    ]
-  }
 ];
