@@ -3,7 +3,7 @@ import { Container } from './container';
 
 type SectionProps = {
   title?: string;
-  intro?: string;
+  intro?: React.ReactNode;
   children: ReactNode;
   className?: string;
 };
