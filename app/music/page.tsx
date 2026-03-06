@@ -25,7 +25,10 @@ const musicInfluences = {
     'Ren',
     'Gojira',
     'Pantera',
-    'Rage Against the Machine'
+    'Rage Against the Machine',
+    'Black Sabbath',
+    'Lamb of God',
+    'Architects',
   ],
   genresAndStyles: [
     'Metal',

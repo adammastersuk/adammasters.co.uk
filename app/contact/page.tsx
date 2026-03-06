@@ -13,7 +13,7 @@ export default function ContactPage() {
       <Card className="max-w-xl">
         <div className="space-y-3 text-slate-600">
           <p>
-            <span className="font-medium text-slate-800">Email:</span> your.email@example.com
+            <span className="font-medium text-slate-800">Email:</span> mailto:hello@adammasters.co.uk
           </p>
           <p>
             <span className="font-medium text-slate-800">GitHub:</span> <a href="https://github.com/adammastersuk">github.com/adammastersuk</a>
