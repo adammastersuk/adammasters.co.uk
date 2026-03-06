@@ -27,10 +27,6 @@ export const buildProjects: BuildProject[] = [
         label: 'Live site',
         href: '/'
       },
-      {
-        label: 'Repository',
-        href: 'https://github.com/YOUR_USERNAME/personal-site'
-      }
     ]
   },
 
@@ -46,12 +42,8 @@ export const buildProjects: BuildProject[] = [
     links: [
       {
         label: 'Play game',
-        href: 'https://snake-game.vercel.app'
+        href: 'https://builds.adammasters.co.uk/snake'
       },
-      {
-        label: 'Repository',
-        href: 'https://github.com/YOUR_USERNAME/snake'
-      }
     ]
   },
 
