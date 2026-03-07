@@ -11,6 +11,22 @@ export type LearningPost = {
 export const learningPosts: LearningPost[] = [
   
   {
+  date: '2026-03-07',
+  sprint: 'Architecture',
+  title: 'Creating a builds hub and separating projects',
+  summary:
+    'Refactored how projects are organised by introducing a builds hub on the personal site and moving individual projects like Snake and the Reaction Speed Test into their own repositories and deployments. This creates a cleaner architecture where the main site acts as a navigation layer while each build can evolve independently, making experimentation safer and simplifying future project additions.',
+  tags: ['Systems', 'Architecture']
+},
+  {
+  date: '2026-03-07',
+  sprint: 'Builds',
+  title: 'Building a reaction speed test',
+  summary:
+    'Built a simple browser-based reaction speed test where users click as quickly as possible once the screen turns green. The project explored timing logic, randomised delays to prevent anticipation, UI feedback loops, and quick iteration using the same Next.js and Vercel deployment workflow used for the Snake build. It reinforced how small interaction-focused projects can be shipped quickly while still requiring careful handling of state, timing, and user feedback.',
+  tags: ['Builds', 'Next.js']
+},
+  {
   date: '2026-03-04',
   sprint: 'Builds',
   title: 'Building a browser-based Snake game',
