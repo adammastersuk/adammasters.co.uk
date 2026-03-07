@@ -91,35 +91,40 @@ export default function LearningClient() {
           <div className="mt-6 space-y-4">
             {filteredPosts.map((post) => (
               <Card key={`${post.date}-${post.title}`}>
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="text-sm text-slate-500">
-                    <p className="font-medium text-slate-700">{formatDate(post.date)}</p>
-                    {post.sprint ? (
-                      <p className="mt-1 text-xs text-slate-500">Focus: {post.sprint}</p>
-                    ) : null}
-                  </div>
+  <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
+    
+    {/* Date column */}
+    <div className="text-sm text-slate-500">
+      <p className="font-medium text-slate-700">{formatDate(post.date)}</p>
+      {post.sprint ? (
+        <p className="mt-1 text-xs text-slate-500">Focus: {post.sprint}</p>
+      ) : null}
+    </div>
 
-                  {/* Tags (matching your Work badges) */}
-                  <div className="flex flex-wrap gap-2 sm:justify-end">
-                    {post.tags.map((tag) => (
-                      <button
-                        key={`${post.title}-${tag}`}
-                        type="button"
-                        onClick={() => setActiveTag(tag)}
-                        className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900"
-                        aria-label={`Filter by tag: ${tag}`}
-                      >
-                        {tag}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+    {/* Content column */}
+    <div>
+      <div className="flex flex-wrap gap-2 mb-2">
+        {post.tags.map((tag) => (
+          <button
+            key={`${post.title}-${tag}`}
+            type="button"
+            onClick={() => setActiveTag(tag)}
+            className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900"
+            aria-label={`Filter by tag: ${tag}`}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
 
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{post.title}</h3>
-                <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
-                  {post.summary}
-                </p>
-              </Card>
+      <h3 className="text-xl font-semibold text-slate-900">{post.title}</h3>
+
+      <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
+        {post.summary}
+      </p>
+    </div>
+  </div>
+</Card>
             ))}
 
             {/* No results state */}

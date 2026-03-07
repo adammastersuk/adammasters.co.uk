@@ -3,7 +3,8 @@ import LearningClient from './learning-client';
 
 export const metadata: Metadata = {
   title: 'Learning',
-  description: 'Structured learning sprints with goals, cadence, milestones, and current focus.'
+  description:
+    'Notes, reflections, and progress from building, writing, systems thinking, and AI-assisted workflows.'
 };
 
 export default function LearningPage() {
