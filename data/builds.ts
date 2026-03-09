@@ -63,7 +63,23 @@ export const buildProjects: BuildProject[] = [
       }
     ]
   },
-
+  {
+  title: 'Aim Trainer',
+  status: 'Live',
+  what:
+    'A fast-paced click accuracy game where targets appear randomly and players try to hit as many as possible within 30 seconds.',
+  why:
+    'Built as a small interactive project to explore responsive gameplay mechanics, timing logic, and consistent leaderboard submission.',
+  learned:
+    'Small games are a great way to test input handling, deterministic scoring, and mobile-friendly interaction patterns.',
+  links: [
+    {
+      label: 'Play game',
+      href: 'https://builds.adammasters.co.uk/aim-trainer'
+    }
+  ]
+},
+  
   {
     title: 'Competitor Pricing Tracker',
     status: 'In progress',
