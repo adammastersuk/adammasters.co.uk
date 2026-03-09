@@ -48,7 +48,13 @@ const featuredPlayableBuilds = [
     description:
       'A simple timing test designed to explore fast feedback loops and clean interaction design in the browser.',
     href: 'https://builds.adammasters.co.uk/reaction-speed-test'
-  }
+  },
+  {
+    title: 'Aim Trainer',
+    description:
+      'A fast-paced click accuracy game where targets appear randomly and players try to hit as many as possible within 30 seconds.',
+    href: 'https://builds.adammasters.co.uk/aim-trainer'
+  },
 ];
 
 export default function BuildsPage() {
