@@ -63,23 +63,6 @@ export const buildProjects: BuildProject[] = [
       }
     ]
   },
-  
-  {
-    title: 'Competitor Pricing Tracker',
-    status: 'In progress',
-    what:
-      'A small system that monitors competitor product prices and highlights meaningful changes.',
-    why:
-      'In ecommerce trading, price awareness matters — but manually checking competitor sites does not scale.',
-    learned:
-      'Simple automation often solves operational friction better than large platforms.',
-    links: [
-      {
-        label: 'Project notes',
-        href: '/learning'
-      }
-    ]
-  },
 
   {
     title: 'Weekly Reporting Automation',
