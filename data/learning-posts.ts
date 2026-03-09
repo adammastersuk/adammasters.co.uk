@@ -9,7 +9,14 @@ export type LearningPost = {
 };
 
 export const learningPosts: LearningPost[] = [
-  
+  {
+  date: '2026-03-09',
+  sprint: 'Builds',
+  title: 'Building an aim trainer and refining the builds architecture',
+  summary:
+    'Built a browser-based Aim Trainer game and used it as an opportunity to further refine the builds architecture. Each experiment now runs in its own repository and deployment while remaining discoverable through a central builds hub. This pattern keeps the personal site focused on explanation and navigation while allowing individual builds to evolve independently, making it easier to ship small experiments quickly without increasing complexity in the main project.',
+  tags: ['Builds', 'Systems', 'Architecture']
+},
   {
   date: '2026-03-07',
   sprint: 'Architecture',
