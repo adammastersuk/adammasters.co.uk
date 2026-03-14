@@ -147,13 +147,31 @@ export default function BuildsPage() {
               return (
                 <Card key={project.title} className="flex h-full flex-col">
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
+                    <div>
+                      <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
+                      {project.subtitle ? (
+                        <p className="mt-1 text-sm text-slate-600">{project.subtitle}</p>
+                      ) : null}
+                    </div>
                     {project.status ? (
                       <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-slate-600">
                         {project.status}
                       </span>
                     ) : null}
                   </div>
+
+                  {project.tags?.length ? (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-slate-600"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
 
                   <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-600">
                     <p>
@@ -215,13 +233,31 @@ export default function BuildsPage() {
               return (
                 <Card key={project.title} className="flex h-full flex-col">
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
+                    <div>
+                      <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
+                      {project.subtitle ? (
+                        <p className="mt-1 text-sm text-slate-600">{project.subtitle}</p>
+                      ) : null}
+                    </div>
                     {project.status ? (
                       <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-slate-600">
                         {project.status}
                       </span>
                     ) : null}
                   </div>
+
+                  {project.tags?.length ? (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-slate-600"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
 
                   <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-600">
                     <p>
