@@ -31,25 +31,35 @@ const buildAreas = [
   }
 ];
 
-const featuredPlayableBuilds = [
+const featuredBuilds = [
   {
-    title: 'Snake',
+    title: 'Bulk Image Resizer',
     description:
-      'Classic Snake with leaderboard support and theme variations. Built to practise shipping interaction-heavy browser games quickly.',
-    href: 'https://builds.adammasters.co.uk/snake'
+      'A practical ecommerce image tool for fast batch resizing with presets, crop/fill modes, and export controls.',
+    href: 'https://bulk-image-resizer-mu.vercel.app/',
+    cta: 'Open tool →'
   },
   {
     title: 'Reaction Speed Test',
     description:
       'A simple timing test designed to explore fast feedback loops and clean interaction design in the browser.',
-    href: 'https://builds.adammasters.co.uk/reaction-speed-test'
+    href: 'https://builds.adammasters.co.uk/reaction-speed-test',
+    cta: 'Play now →'
+  },
+  {
+    title: 'Snake',
+    description:
+      'Classic Snake with leaderboard support and theme variations. Built to practise shipping interaction-heavy browser games quickly.',
+    href: 'https://builds.adammasters.co.uk/snake',
+    cta: 'Play now →'
   },
   {
     title: 'Aim Trainer',
     description:
       'A fast-paced click accuracy game where targets appear randomly and players try to hit as many as possible within 30 seconds.',
-    href: 'https://builds.adammasters.co.uk/aim-trainer'
-  },
+    href: 'https://builds.adammasters.co.uk/aim-trainer',
+    cta: 'Play now →'
+  }
 ];
 
 export default function BuildsPage() {
@@ -86,9 +96,9 @@ export default function BuildsPage() {
       </div>
 
       <div id="games" className="mt-12 scroll-mt-24 border-t border-slate-200 pt-8">
-        <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Playable Experiments</p>
+        <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Featured builds</p>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">
-          Small browser-based experiments exploring interaction design and gameplay logic.
+          A mix of practical tools and browser-based experiments exploring useful workflows and interaction design.
         </p>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">
           The cards below highlight a few examples — the full collection lives in the Builds Hub.
@@ -118,7 +128,7 @@ export default function BuildsPage() {
         </p>
 
         <div className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {featuredPlayableBuilds.map((build) => (
+          {featuredBuilds.map((build) => (
             <Card key={build.title} className="flex h-full flex-col">
               <h3 className="text-xl font-semibold text-slate-900">{build.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">{build.description}</p>
@@ -130,7 +140,7 @@ export default function BuildsPage() {
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
                 >
-                  Play →
+                  {build.cta}
                 </a>
               </div>
             </Card>

@@ -16,8 +16,8 @@ export type BuildProject = {
 
 export const buildProjects: BuildProject[] = [
   {
-    title: 'E-Commerce Tools',
-    subtitle: 'Local-first utilities for ecommerce image and file workflows',
+    title: 'Bulk Image Resizer',
+    subtitle: 'Local-first ecommerce image preparation tool',
     status: 'Live',
     what:
       'A browser-based ecommerce utilities app to speed up repetitive image and file preparation tasks. The featured tool is Bulk Image Resizer for product imagery, with batch handling, preset sizing, crop/fill modes, and format/quality controls built for day-to-day catalogue work. The wider app also includes image conversion and document conversion utilities.',
