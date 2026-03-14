@@ -5,14 +5,35 @@ export type BuildLink = {
 
 export type BuildProject = {
   title: string;
+  subtitle?: string;
   status?: 'Live' | 'Prototype' | 'In progress';
   what: string;
   why: string;
   learned: string;
+  tags?: string[];
   links?: BuildLink[];
 };
 
 export const buildProjects: BuildProject[] = [
+  {
+    title: 'E-Commerce Tools',
+    subtitle: 'Local-first utilities for ecommerce image and file workflows',
+    status: 'Live',
+    what:
+      'A browser-based ecommerce utilities app to speed up repetitive image and file preparation tasks. The featured tool is Bulk Image Resizer for product imagery, with batch handling, preset sizing, crop/fill modes, and format/quality controls built for day-to-day catalogue work. The wider app also includes image conversion and document conversion utilities.',
+    why:
+      'Ecommerce teams often lose time to repetitive file prep. I wanted a practical workflow tool that handles bulk image processing quickly without sending files to external services.',
+    learned:
+      'Local-first processing keeps workflows private and dependable. Clear presets and output controls reduce repeated decisions and make routine operations easier to standardise.',
+    tags: ['E-Commerce', 'Tools', 'Workflow', 'Images'],
+    links: [
+      {
+        label: 'Open tool',
+        href: '[PASTE YOUR VERCEL URL HERE]'
+      }
+    ]
+  },
+
   {
     title: 'This Website',
     status: 'Live',
