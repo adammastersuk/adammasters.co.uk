@@ -10,6 +10,14 @@ export type LearningPost = {
 
 export const learningPosts: LearningPost[] = [
   {
+    date: '2026-03-10',
+    sprint: 'Builds',
+    title: 'Building and shipping a bulk image resizer tool',
+    summary:
+      'Built and shipped a dedicated Bulk Image Resizer tool for ecommerce workflows, focused on fast batch processing, preset dimensions, crop/fill modes, and export format controls. This reinforced the value of solving narrow, repetitive operational problems with lightweight browser-based utilities that are easy to access and quick to iterate.',
+    tags: ['Builds', 'Tools', 'E-Commerce']
+  },
+  {
   date: '2026-03-09',
   sprint: 'Builds',
   title: 'Building an aim trainer and refining the builds architecture',
