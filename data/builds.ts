@@ -29,7 +29,7 @@ export const buildProjects: BuildProject[] = [
     links: [
       {
         label: 'Open tool',
-        href: '[PASTE YOUR VERCEL URL HERE]'
+        href: 'https://bulk-image-resizer-mu.vercel.app/'
       }
     ]
   },
