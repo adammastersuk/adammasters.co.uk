@@ -33,13 +33,6 @@ const buildAreas = [
 
 const featuredBuilds = [
   {
-    title: 'Bulk Image Resizer',
-    description:
-      'A practical ecommerce image tool for fast batch resizing with presets, crop/fill modes, and export controls.',
-    href: 'https://bulk-image-resizer-mu.vercel.app/',
-    cta: 'Open tool →'
-  },
-  {
     title: 'Reaction Speed Test',
     description:
       'A simple timing test designed to explore fast feedback loops and clean interaction design in the browser.',
