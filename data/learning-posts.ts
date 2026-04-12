@@ -28,9 +28,9 @@ export const learningPosts: LearningPost[] = [
   {
     date: '2026-03-24',
     sprint: 'Builds',
-    title: 'Iterating on a Life OS dashboard and shipping usable workflows',
+    title: 'Building a Life OS to manage ideas, habits, and execution',
     summary:
-      'I continued building my Life OS dashboard with Next.js, Supabase, and Vercel, focusing on turning rough ideas into workflows I would actually use every day. I learned that small product decisions around structure and usability have a direct impact on adoption, and that shipping early is the fastest way to move from theory to something genuinely useful.',
+      'I built and iterated on a Life OS dashboard with Next.js, Supabase, and Vercel because I had too many ideas, tasks, and habits spread across places and needed one system I could trust daily. It became a practical second-brain setup that works better for me than Notion, with structure built around how I actually operate. The main learning was that usability and workflow design matter more than feature count when the goal is consistent execution.',
     tags: ['Builds', 'Next.js', 'Systems', 'E-Commerce']
   },
   {
