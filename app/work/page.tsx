@@ -4,7 +4,7 @@ import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
   title: 'Work',
-  description: 'Professional profile of Adam Masters as Senior E-Commerce Executive at Bents.'
+  description: 'Professional profile of Adam Masters, E-Commerce Manager at Bents Garden & Home.'
 };
 
 const METRICS = [
@@ -37,7 +37,7 @@ export default function WorkPage() {
         title="Work"
         intro={
   <>
-    As Senior E-Commerce Executive at{' '}
+    As E-Commerce Manager at{' '}
     <a
       href="https://www.bents.co.uk"
       target="_blank"
@@ -46,12 +46,14 @@ export default function WorkPage() {
     >
       Bents Garden & Home
     </a>
-    , I lead digital trading and execution across our online operation. My focus is on building reliable systems, improving trading rhythm, and creating consistent customer outcomes at scale.
+    , I lead digital trading performance across our online operation. My focus is to connect commercial priorities,
+    customer experience, and day-to-day execution so performance improves in a reliable, measurable way.
   </>
 }
       >
         <p className="max-w-2xl text-base leading-relaxed text-slate-600">
-          I&apos;m drawn to complex problems, especially when the answer is to make things clearer.
+          I&apos;m at my best where strategy needs practical delivery — translating targets into clear plans, structured
+          trading activity, and accountable execution across teams.
         </p>
 
         {/* Metrics highlight row */}
@@ -77,7 +79,9 @@ export default function WorkPage() {
         <Card className="mt-10">
           <h3 className="text-xl font-semibold text-slate-900">Role Summary</h3>
           <p className="mt-3 leading-relaxed text-slate-600">
-            I work across ecommerce trading, operational systems, and execution planning - aligning teams around clear priorities, measurable outcomes, and sustainable trading rhythm.
+            I own ecommerce trading cadence, performance reporting, and optimisation priorities — working across
+            merchandising, marketing, operations, and customer teams to improve conversion, margin, and customer
+            outcomes.
           </p>
         </Card>
 
@@ -85,28 +89,30 @@ export default function WorkPage() {
         <div className="mt-6">
           <Card>
             <p className="text-lg font-semibold leading-snug text-slate-900">
-              “Digital should not just grow, it should compound profit through disciplined execution and better systems.”
+              “Strong digital performance comes from consistent trading decisions, clear accountability, and better
+              customer journeys.”
             </p>
             <p className="mt-2 text-sm text-slate-600">
-              Trading, systems, and execution - designed to compound over time.
+              Strategy and execution only matter when they improve commercial outcomes.
             </p>
           </Card>
         </div>
       </Section>
 
-      <Section title="Where I Add Value" intro="I operate at the intersection of trading, systems, and execution.">
+      <Section title="Where I Add Value" intro="I operate at the intersection of commercial strategy and execution.">
         <div className="max-w-3xl text-base leading-relaxed text-slate-700">
           <p className="mt-6">In practice, that means:</p>
 
           <ul className="mt-4 space-y-2">
-            <li>– Turning <strong>commercial strategy</strong> into structured daily action</li>
-            <li>– <strong>Building internal workflows</strong> that reduce friction and increase reliability</li>
-            <li>– <strong>Improving digital performance</strong> through clarity, not constant reinvention</li>
-            <li>– <strong>Aligning teams</strong> around priorities that actually move outcomes</li>
+            <li>– Owning the <strong>trading plan</strong> and turning it into structured weekly execution</li>
+            <li>– Connecting <strong>digital performance data</strong> to practical commercial decisions</li>
+            <li>– Driving <strong>CRO and customer journey improvements</strong> with measurable outcomes</li>
+            <li>– Aligning <strong>cross-functional stakeholders</strong> around priorities that move revenue and margin</li>
           </ul>
 
           <p className="mt-6">
-            I’m most useful when things feel complex. My instinct is to simplify, structure, and make progress measurable.
+            I&apos;m most useful when things feel complex. My approach is to simplify, structure, and make progress easy
+            to measure and communicate.
           </p>
         </div>
       </Section>
@@ -205,12 +211,12 @@ export default function WorkPage() {
       <Section title="Selected Initiatives" intro="A few examples of where I&apos;ve focused my effort.">
         <div className="grid gap-5 md:grid-cols-2">
           {[
-            'Improved weekly trade rhythm through clearer planning, ownership, and retrospectives.',
-            'Implemented API-driven automation across commerce and retention systems.',
-            'Led customer service platform strategy (Gnatta evaluation & rollout plan)',
-            'Introduced structured optimisation across merchandising, content and conversion',
-            'Improved product feed governance and paid channel alignment across Merchant Center, ProductHero and Google Ads.',
-            'Built executive-level performance reporting dashboards'
+            'Strengthened weekly trading rhythm through clearer planning, ownership, and performance accountability.',
+            'Implemented API-driven automation across commerce and retention systems to reduce manual workload.',
+            'Led customer service platform strategy, including Gnatta evaluation and rollout planning.',
+            'Introduced structured optimisation across merchandising, content, and conversion opportunities.',
+            'Improved product feed governance and paid-channel alignment across Merchant Center, ProductHero, and Google Ads.',
+            'Built senior stakeholder reporting dashboards to improve commercial visibility and decision quality.'
           ].map((initiative) => (
             <Card key={initiative}>
               <p className="leading-relaxed text-slate-600">{initiative}</p>
