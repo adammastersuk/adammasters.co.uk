@@ -10,6 +10,30 @@ export type LearningPost = {
 
 export const learningPosts: LearningPost[] = [
   {
+    date: '2026-04-09',
+    sprint: 'Data & AI',
+    title: 'Evaluating Windsor.ai to centralise marketing data for AI reporting',
+    summary:
+      'I spent this week testing Windsor.ai as a connector layer to bring GA4 and paid media data into one pipeline, with the goal of feeding a ChatGPT workspace for faster reporting. The key learning was that the value is less about another dashboard and more about creating a reliable data foundation that can scale insight generation, reduce manual reporting time, and support better e-commerce decisions.',
+    tags: ['E-Commerce', 'Data', 'AI', 'Systems']
+  },
+  {
+    date: '2026-04-03',
+    sprint: 'Architecture',
+    title: 'Improving deployment reliability and frontend boundaries',
+    summary:
+      'I worked through real deployment friction across builds and Vercel errors, while tightening server/client component boundaries in Next.js and fixing a few data flow issues. I also used Codex and ChatGPT as development co-pilots to speed up debugging and scaffold options, then validated critical changes manually. This reinforced that robust architecture is practical, not academic: cleaner boundaries and better UI feedback make apps easier to debug, safer to ship, and more resilient under day-to-day change.',
+    tags: ['Next.js', 'Architecture', 'Deployment', 'Systems']
+  },
+  {
+    date: '2026-03-24',
+    sprint: 'Builds',
+    title: 'Building a Life OS to manage ideas, habits, and execution',
+    summary:
+      'I built and iterated on a Life OS dashboard with Next.js, Supabase, and Vercel because I had too many ideas, tasks, and habits spread across places and needed one system I could trust daily. It became a practical second-brain setup that works better for me than Notion, with structure built around how I actually operate. The main learning was that usability and workflow design matter more than feature count when the goal is consistent execution.',
+    tags: ['Builds', 'Next.js', 'Systems', 'E-Commerce']
+  },
+  {
     date: '2026-03-10',
     sprint: 'Builds',
     title: 'Building and shipping a bulk image resizer tool',
