@@ -10,11 +10,11 @@ export const metadata = {
     template: '%s | Adam Masters'
   },
   description:
-    'Senior E-Commerce Executive at Bents Garden & Home. Focused on trading systems, execution discipline, and building useful tools.',
+    'E-Commerce Manager at Bents Garden & Home. Focused on digital trading performance, customer experience, and commercial growth.',
   openGraph: {
   title: 'Adam Masters',
   description:
-    'Senior E-Commerce Executive at Bents Garden & Home. Focused on systems, trading rhythm, and building useful tools.',
+    'E-Commerce Manager at Bents Garden & Home. Focused on trading performance, commercial clarity, and practical execution.',
   url: 'https://adammasters.co.uk',
   siteName: 'Adam Masters',
   images: [
@@ -32,7 +32,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Adam Masters',
     description:
-      'Senior E-Commerce Executive at Bents Garden & Home.'
+      'E-Commerce Manager at Bents Garden & Home.'
   },
   authors: [{ name: 'Adam Masters' }],
 creator: 'Adam Masters',

@@ -5,14 +5,14 @@ import { Section } from '@/components/section';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Adam Masters about ecommerce, systems, digital projects, and practical collaboration.'
+    'Get in touch with Adam Masters, E-Commerce Manager, about digital trading, ecommerce strategy, and practical collaboration.'
 };
 
 export default function ContactPage() {
   return (
     <Section
       title="Contact"
-      intro="The best way to reach me is by email. I’m most interested in conversations around ecommerce, systems, execution, and useful digital work."
+      intro="The best way to reach me is by email. I’m most interested in conversations around ecommerce performance, trading strategy, and practical digital execution."
     >
       <Card className="max-w-2xl">
         <div className="space-y-8">

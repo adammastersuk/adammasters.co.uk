@@ -7,20 +7,20 @@ import { Section } from '@/components/section';
 export const metadata: Metadata = {
   title: 'Home',
   description:
-    'Senior E-Commerce Executive at Bents, focused on profitable growth, reliable systems, and disciplined execution.'
+    'Adam Masters, E-Commerce Manager at Bents, focused on trading performance, customer experience, and commercial growth.'
 };
 
 const pillars = [
   {
     title: 'Work',
     description:
-      'I lead digital trading and execution at Bents — improving trading rhythm, profitability, and reliable delivery.',
+      'How I lead digital trading at Bents - connecting performance, customer experience, and commercial decision-making.',
     href: '/work'
   },
   {
     title: 'Builds',
     description:
-      'Small tools and experiments — built to test ideas quickly and turn messy problems into something usable.',
+      'Small tools and experiments - built to test ideas quickly and turn messy problems into something usable.',
     href: '/builds'
   },
   {
@@ -32,7 +32,7 @@ const pillars = [
   {
     title: 'Learning',
     description:
-      'Active focus areas and a lightweight learning log — progress notes, reflections, and patterns over time.',
+      'Active focus areas and a lightweight learning log - progress notes, reflections, and patterns over time.',
     href: '/learning'
   }
 ];
@@ -45,24 +45,26 @@ export default function HomePage() {
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Adam Masters</p>
 
           <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600">
-            <span>Senior E-Commerce Executive at Bents Garden &amp; Home</span>
+            <span>E-Commerce Manager at Bents Garden &amp; Home</span>
             <span className="hidden sm:inline">•</span>
-            <span>Trading rhythm &amp; reliable systems</span>
+            <span>Commercial trading &amp; performance</span>
             <span className="hidden sm:inline">•</span>
             <span>Music degree (Guitar)</span>
           </div>
 
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-            I work in e-commerce. I build systems. I keep improving.
+            E-Commerce Manager focused on profitable digital growth.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-            I lead e-commerce at Bents, focused on profitable growth through disciplined trading and better systems.
-            Outside work, I build small tools and AI workflows that make complex work feel simpler.
+            I lead online trading at Bents - balancing strategy, execution, and commercial performance across the
+            customer journey. I focus on turning data into clear action, improving conversion and profitability, and
+            helping teams deliver consistently.
           </p>
 
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-            I care about steady progress, clear thinking, and doing good work without noise.
+            Outside work, I build practical tools and workflows that simplify repetitive tasks and support better
+            decisions.
           </p>
 
           {/* CTAs */}
@@ -71,7 +73,7 @@ export default function HomePage() {
               href="/work"
               className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-800 hover:border-slate-400 hover:text-slate-900"
             >
-              View Work
+              View Professional Profile
             </Link>
 
             <Link

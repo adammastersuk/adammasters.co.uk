@@ -7,7 +7,7 @@ import { buildProjects } from '@/data/builds';
 export const metadata: Metadata = {
   title: 'Builds',
   description:
-    'Practical tools, experiments, and small games built by Adam Masters to test ideas and make useful things.'
+    'Practical tools and experiments by Adam Masters, built to improve ecommerce workflows, decision-making, and delivery.'
 };
 
 const buildAreas = [
@@ -21,7 +21,7 @@ const buildAreas = [
     title: 'Work tools',
     href: '#tools',
     description:
-      'Practical utilities shaped by real e-commerce problems: reporting, structure, trading rhythm, and clearer operational visibility.'
+      'Practical utilities shaped by real e-commerce challenges: reporting clarity, trading cadence, and operational visibility.'
   },
   {
     title: 'Site systems',
@@ -65,12 +65,12 @@ export default function BuildsPage() {
   return (
     <Section
       title="Builds"
-      intro="A growing collection of practical tools, experiments, and small games built to test ideas quickly and leave something useful behind."
+      intro="A growing collection of practical tools and experiments built to solve real workflow problems and sharpen product judgement."
     >
       <div className="mt-6 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-600">
         <p>
-          I use building as a way to think more clearly. Sometimes that leads to a work tool, sometimes a cleaner system,
-          and sometimes a small game that sharpens product instinct through shipping.
+          I use building as a practical extension of my ecommerce role. Some projects improve internal workflows and
+          reporting, while others sharpen product instincts through fast iteration.
         </p>
         <p>
           The common thread is the same: make something real, learn from it, and improve the next version.
@@ -94,7 +94,7 @@ export default function BuildsPage() {
           A mix of practical tools and browser-based experiments exploring useful workflows and interaction design.
         </p>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">
-          The cards below highlight a few examples — the full collection lives in the Builds Hub.
+          The cards below highlight a few examples - the full collection lives in the Builds Hub.
         </p>
 
         <Card className="mt-4 max-w-3xl">
