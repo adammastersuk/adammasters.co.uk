@@ -52,7 +52,7 @@ export default function WorkPage() {
 }
       >
         <p className="max-w-2xl text-base leading-relaxed text-slate-600">
-          I&apos;m at my best where strategy needs practical delivery — translating targets into clear plans, structured
+          I&apos;m at my best where strategy needs practical delivery - translating targets into clear plans, structured
           trading activity, and accountable execution across teams.
         </p>
 
@@ -79,7 +79,7 @@ export default function WorkPage() {
         <Card className="mt-10">
           <h3 className="text-xl font-semibold text-slate-900">Role Summary</h3>
           <p className="mt-3 leading-relaxed text-slate-600">
-            I own ecommerce trading cadence, performance reporting, and optimisation priorities — working across
+            I own ecommerce trading cadence, performance reporting, and optimisation priorities - working across
             merchandising, marketing, operations, and customer teams to improve conversion, margin, and customer
             outcomes.
           </p>

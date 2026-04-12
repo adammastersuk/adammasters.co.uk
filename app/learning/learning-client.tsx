@@ -45,14 +45,14 @@ export default function LearningClient() {
         {/* Focus Areas (de-emphasised) */}
         <div className="mt-4 max-w-3xl">
           <p className="text-sm leading-relaxed text-slate-600">
-            The log below is where the detail lives — quick progress notes, reflections, and small wins.
+            The log below is where the detail lives - quick progress notes, reflections, and small wins.
           </p>
         </div>
       </Section>
 
       <Section
         title="Learning Log"
-        intro="Progress notes, reflections, and small wins — tagged so I can spot patterns over time."
+        intro="Progress notes, reflections, and small wins - tagged so I can spot patterns over time."
       >
         {/* Tag chips */}
         <div className="mt-6 flex flex-wrap gap-2">
@@ -83,7 +83,7 @@ export default function LearningClient() {
             <Card>
               <h3 className="text-lg font-semibold text-slate-900">Coming soon</h3>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-                I’m building this as a lightweight learning journal — short updates, tagged by topic. Check back soon.
+                I’m building this as a lightweight learning journal - short updates, tagged by topic. Check back soon.
               </p>
             </Card>
           </div>

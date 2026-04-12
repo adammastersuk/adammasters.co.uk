@@ -94,7 +94,7 @@ export default function BuildsPage() {
           A mix of practical tools and browser-based experiments exploring useful workflows and interaction design.
         </p>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">
-          The cards below highlight a few examples — the full collection lives in the Builds Hub.
+          The cards below highlight a few examples - the full collection lives in the Builds Hub.
         </p>
 
         <Card className="mt-4 max-w-3xl">

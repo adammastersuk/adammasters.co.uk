@@ -40,7 +40,7 @@ export const buildProjects: BuildProject[] = [
     what:
       'A personal website built with Next.js to share my work, document projects, and publish what I am learning in public.',
     why:
-      'I wanted one place that felt credible, calm, and genuinely mine — something that reflects how I think about systems, clarity, and execution.',
+      'I wanted one place that felt credible, calm, and genuinely mine - something that reflects how I think about systems, clarity, and execution.',
     learned:
       'Clear writing builds trust. A simple content structure makes publishing easier to maintain long term.',
     links: [

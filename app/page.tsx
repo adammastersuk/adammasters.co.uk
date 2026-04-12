@@ -14,13 +14,13 @@ const pillars = [
   {
     title: 'Work',
     description:
-      'How I lead digital trading at Bents — connecting performance, customer experience, and commercial decision-making.',
+      'How I lead digital trading at Bents - connecting performance, customer experience, and commercial decision-making.',
     href: '/work'
   },
   {
     title: 'Builds',
     description:
-      'Small tools and experiments — built to test ideas quickly and turn messy problems into something usable.',
+      'Small tools and experiments - built to test ideas quickly and turn messy problems into something usable.',
     href: '/builds'
   },
   {
@@ -32,7 +32,7 @@ const pillars = [
   {
     title: 'Learning',
     description:
-      'Active focus areas and a lightweight learning log — progress notes, reflections, and patterns over time.',
+      'Active focus areas and a lightweight learning log - progress notes, reflections, and patterns over time.',
     href: '/learning'
   }
 ];
@@ -57,7 +57,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-            I lead online trading at Bents — balancing strategy, execution, and commercial performance across the
+            I lead online trading at Bents - balancing strategy, execution, and commercial performance across the
             customer journey. I focus on turning data into clear action, improving conversion and profitability, and
             helping teams deliver consistently.
           </p>
