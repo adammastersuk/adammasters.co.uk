@@ -39,13 +39,13 @@ export default function LearningClient() {
     <>
       <Section
   title="Learning"
-  intro="I keep a small number of active focus areas that I’m exploring over time. Not everything I learn has to be practical; sometimes the point is simply to pay attention and improve (sometimes just a bit of fun!)."
+  intro="As an E-Commerce Manager, I treat learning as part of the job - building practical systems, testing ideas in the real world, and improving how data and technology support better decisions."
 >
 
         {/* Focus Areas (de-emphasised) */}
         <div className="mt-4 max-w-3xl">
           <p className="text-sm leading-relaxed text-slate-600">
-            The log below is where the detail lives - quick progress notes, reflections, and small wins.
+            The log below is where I capture what I worked on, what I learned, and why it matters commercially.
           </p>
         </div>
       </Section>
