@@ -16,15 +16,39 @@ export type BuildProject = {
 
 export const buildProjects: BuildProject[] = [
   {
+    title: 'Weekly Reporting Workflow',
+    subtitle: 'Structured e-commerce reporting and executive insight support',
+    status: 'In progress',
+    what:
+      'A repeatable weekly reporting workflow that consolidates commercial performance inputs and turns them into clear stakeholder updates with actions and risks.',
+    why:
+      'Weekly reporting can become noisy and manual. I wanted a consistent operating rhythm that improves decision speed and reporting quality.',
+    learned:
+      'The biggest value is clarity and consistency: when reporting format and cadence are stable, stakeholder decisions are faster and more aligned.',
+    tags: ['E-Commerce', 'Reporting', 'Leadership', 'Workflow']
+  },
+  {
+    title: 'AI-Assisted Insight Workflow',
+    subtitle: 'Using connected data inputs for practical analysis support',
+    status: 'In progress',
+    what:
+      'An evolving workflow that combines marketing and commerce data inputs with AI-assisted analysis to draft first-pass performance summaries and insight prompts.',
+    why:
+      'I wanted to reduce repetitive analysis tasks while improving the speed of insight generation for weekly trading decisions.',
+    learned:
+      'AI support works best when data inputs and reporting structure are clean; workflow quality matters more than model novelty.',
+    tags: ['AI', 'Data', 'E-Commerce', 'Systems']
+  },
+  {
     title: 'Bulk Image Resizer',
-    subtitle: 'Local-first ecommerce image preparation tool',
+    subtitle: 'Local-first e-commerce image preparation tool',
     status: 'Live',
     what:
-      'A browser-based ecommerce utilities app to speed up repetitive image and file preparation tasks. The featured tool is Bulk Image Resizer for product imagery, with batch handling, preset sizing, crop/fill modes, and format/quality controls built for day-to-day catalogue work. The wider app also includes image conversion and document conversion utilities.',
+      'A browser-based utility that speeds up product image preparation with batch handling, preset sizing, crop/fill modes, and export controls.',
     why:
-      'Ecommerce teams often lose time to repetitive file prep. I wanted a practical workflow tool that handles bulk image processing quickly without sending files to external services.',
+      'Catalog operations often lose time to repetitive file prep, especially when teams need consistent image standards across channels.',
     learned:
-      'Local-first processing keeps workflows private and dependable. Clear presets and output controls reduce repeated decisions and make routine operations easier to standardise.',
+      'Local-first processing plus simple presets makes repetitive operational tasks faster, safer, and easier to standardise.',
     tags: ['E-Commerce', 'Tools', 'Workflow', 'Images'],
     links: [
       {
@@ -33,67 +57,61 @@ export const buildProjects: BuildProject[] = [
       }
     ]
   },
-
+  {
+    title: 'Life OS Dashboard',
+    subtitle: 'Personal execution and planning system',
+    status: 'Prototype',
+    what:
+      'A custom dashboard built to unify tasks, habits, notes, and planning into one practical operating system for weekly execution.',
+    why:
+      'I needed a system that matched my real workflow and removed fragmentation across tools.',
+    learned:
+      'Workflow fit beats feature count. A focused system that supports daily habits creates better execution consistency.',
+    tags: ['Systems', 'Next.js', 'Workflow']
+  },
   {
     title: 'This Website',
     status: 'Live',
     what:
-      'A personal website built with Next.js to share my work, document projects, and publish what I am learning in public.',
+      'A lightweight Next.js personal brand site structured around work profile, project proof-of-work, and a practical learning log.',
     why:
-      'I wanted one place that felt credible, calm, and genuinely mine - something that reflects how I think about systems, clarity, and execution.',
+      'I wanted one credible place to show commercial impact, how I think, and how I ship useful solutions.',
     learned:
-      'Clear writing builds trust. A simple content structure makes publishing easier to maintain long term.',
+      'Clear structure and consistent publishing patterns make a professional site easier to maintain and more useful to recruiters and stakeholders.',
     links: [
       {
         label: 'Live site',
         href: '/'
-      },
+      }
     ]
   },
-
   {
     title: 'Snake',
     status: 'Live',
     what:
-      'A browser-based Snake game with leaderboard tracking and theme variations, built to turn a simple concept into a polished playable experience.',
-    why:
-      'Small games are a practical way to iterate quickly on interaction design, game feel, and release discipline.',
+      'A browser-based Snake game with leaderboard tracking and theme variants, built as a fast iteration and interaction-design exercise.',
+    why: 'Small build cycles are useful for sharpening shipping speed, release discipline, and user feedback loops.',
     learned:
-      'Responsive controls and clear feedback loops matter as much as mechanics when the goal is a smooth, replayable browser experience.',
+      'Simple ideas still demand detail. Interaction feel, responsiveness, and visual feedback are critical to perceived quality.',
     links: [
       {
         label: 'Play game',
         href: 'https://builds.adammasters.co.uk/snake'
-      },
+      }
     ]
   },
-
   {
     title: 'Reaction Speed Test',
     status: 'Live',
-    what:
-      'A lightweight browser test measuring click or tap reaction speed across repeated runs.',
-    why:
-      'Small interaction experiments are a fast way to test feedback loops and UI clarity.',
+    what: 'A lightweight browser interaction test focused on timing, responsiveness, and clear state transitions.',
+    why: 'Quick experiments are a low-friction way to test UI clarity and iterate on interaction patterns.',
     learned:
-      'Immediate visual feedback and simple state transitions make interaction feel responsive and trustworthy.',
+      'Fast, reliable feedback loops increase trust and make even simple tools feel more polished and usable.',
     links: [
       {
         label: 'Play test',
         href: 'https://builds.adammasters.co.uk/reaction-speed-test'
       }
     ]
-  },
-
-  {
-    title: 'Weekly Reporting Automation',
-    status: 'In progress',
-    what:
-      'An automated workflow that generates structured weekly ecommerce performance summaries.',
-    why:
-      'Reporting should create clarity, not manual workload.',
-    learned:
-      'Well-designed data pipelines can remove repetitive operational tasks.',
-    links: []
   }
 ];

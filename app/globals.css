@@ -17,3 +17,7 @@ a {
 main > .editorial-section:nth-of-type(even) {
   background-color: rgba(247, 246, 242, 0.55);
 }
+
+::selection {
+  background-color: rgb(15 23 42 / 0.14);
+}

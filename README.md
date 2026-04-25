@@ -4,15 +4,15 @@ Personal brand website for Adam Masters, built with **Next.js 14 (App Router)**,
 
 ## Features
 
-- Clean, executive, minimal visual style
+- Clean, commercially focused visual style
 - Mobile-first responsive layout
 - Shared site layout with reusable components (`Container`, `Section`, `Card`)
-- Dedicated pages: Home, Work, Builds, Music, Learning, Now, Contact
+- Dedicated pages: Home, Work, Builds, Music, Learning, Contact
 - Structured TypeScript data files for:
   - Build projects
-  - Learning sprints
-  - Music themes
-- Per-page SEO metadata
+  - Learning focus areas
+  - Learning log posts
+- Per-page SEO metadata with sitemap and robots support
 
 ## Run locally
 
