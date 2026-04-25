@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <Section
       title="Contact"
-      intro="If you are hiring for senior e-commerce or digital trading leadership, email is the best route. I am especially interested in commercially accountable roles where strategy and execution both matter."
+      intro="If you’re interested in conversations around senior e-commerce leadership, digital trading performance, or commercially accountable delivery, email is the best route."
     >
       <Card className="max-w-2xl">
         <div className="space-y-8">
@@ -28,7 +28,8 @@ export default function ContactPage() {
               </a>
             </div>
             <p className="max-w-xl text-sm leading-relaxed text-slate-600">
-              Best for relevant opportunities, project conversations, or practical e-commerce collaboration.
+              Best for conversations around e-commerce growth, digital trading strategy, reporting, or practical
+              collaboration.
             </p>
           </div>
 
@@ -61,7 +62,8 @@ export default function ContactPage() {
           </div>
 
           <p className="border-t border-slate-200 pt-6 text-sm leading-relaxed text-slate-600">
-            Based in the North West (Wigan area) and open to remote/hybrid discussions across the UK.
+            Based in the North West (Wigan area) and interested in conversations across remote and hybrid teams in the
+            UK.
           </p>
         </div>
       </Card>

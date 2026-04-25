@@ -13,7 +13,7 @@ export function SiteFooter() {
             href="/contact"
             className="text-sm font-medium text-slate-700 underline decoration-slate-300 underline-offset-4 transition hover:text-slate-900 hover:decoration-slate-500"
           >
-            Open to relevant opportunities
+            Interested in conversations around digital trading and e-commerce growth
           </Link>
         </div>
       </Container>
