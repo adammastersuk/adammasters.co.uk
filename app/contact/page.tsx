@@ -3,23 +3,21 @@ import { Card } from '@/components/card';
 import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact: Senior E-Commerce and Digital Leadership Conversations',
   description:
-    'Get in touch with Adam Masters, E-Commerce Manager, about digital trading, ecommerce strategy, and practical collaboration.'
+    'Contact Adam Masters for senior e-commerce, digital trading, commercial growth, and practical AI workflow conversations.'
 };
 
 export default function ContactPage() {
   return (
     <Section
       title="Contact"
-      intro="The best way to reach me is by email. I’m most interested in conversations around ecommerce performance, trading strategy, and practical digital execution."
+      intro="If you are hiring for senior e-commerce or digital trading leadership, email is the best route. I am especially interested in commercially accountable roles where strategy and execution both matter."
     >
       <Card className="max-w-2xl">
         <div className="space-y-8">
           <div className="space-y-3">
-            <p className="text-sm font-medium uppercase tracking-wide text-slate-500">
-              Primary
-            </p>
+            <p className="text-sm font-medium uppercase tracking-wide text-slate-500">Primary</p>
             <div className="space-y-2">
               <p className="text-lg font-semibold text-slate-900">Email</p>
               <a
@@ -30,15 +28,12 @@ export default function ContactPage() {
               </a>
             </div>
             <p className="max-w-xl text-sm leading-relaxed text-slate-600">
-              For thoughtful conversations, relevant opportunities, or practical collaboration,
-              email is the simplest route.
+              Best for relevant opportunities, project conversations, or practical e-commerce collaboration.
             </p>
           </div>
 
           <div className="space-y-3">
-            <p className="text-sm font-medium uppercase tracking-wide text-slate-500">
-              Elsewhere
-            </p>
+            <p className="text-sm font-medium uppercase tracking-wide text-slate-500">Elsewhere</p>
             <div className="space-y-3 text-slate-700">
               <p>
                 <span className="font-medium text-slate-900">LinkedIn:</span>{' '}
@@ -66,7 +61,7 @@ export default function ContactPage() {
           </div>
 
           <p className="border-t border-slate-200 pt-6 text-sm leading-relaxed text-slate-600">
-            Open to thoughtful conversations, practical collaboration, and interesting problems.
+            Based in the North West (Wigan area) and open to remote/hybrid discussions across the UK.
           </p>
         </div>
       </Card>

@@ -5,15 +5,15 @@ export type LearningFocusArea = {
 
 export const learningFocusAreas: LearningFocusArea[] = [
   {
-    title: 'Systems Thinking',
-    description: 'How structure and rhythm improve decision quality and commercial outcomes.'
+    title: 'AI and workflow design',
+    description: 'Testing AI-assisted operating patterns that reduce repetitive work and improve execution speed.'
   },
   {
-    title: 'Next.js & Product Craft',
-    description: 'Building calm, structured digital experiences with modern tooling.'
+    title: 'E-commerce reporting systems',
+    description: 'Building clearer reporting structures that turn data into decisions for weekly trading and stakeholder updates.'
   },
   {
-    title: 'Music Theory',
-    description: 'Understanding harmony and structure beyond memorised patterns.'
+    title: 'Product and delivery craft',
+    description: 'Improving how I scope, ship, and iterate lightweight tools with maintainable architecture and clear UX.'
   }
 ];

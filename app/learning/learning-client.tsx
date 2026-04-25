@@ -38,24 +38,24 @@ export default function LearningClient() {
   return (
     <>
       <Section
-  title="Learning"
-  intro="As an E-Commerce Manager, I treat learning as part of the job - building practical systems, testing ideas in the real world, and improving how data and technology support better decisions."
->
-
-        {/* Focus Areas (de-emphasised) */}
-        <div className="mt-4 max-w-3xl">
-          <p className="text-sm leading-relaxed text-slate-600">
-            The log below is where I capture what I worked on, what I learned, and why it matters commercially.
-          </p>
+        title="Learning"
+        intro="I treat learning as part of delivery, not a side activity. The focus is practical: build something, test it in context, and carry the useful parts into commercial work."
+      >
+        <div className="grid gap-4 md:grid-cols-3">
+          {learningFocusAreas.map((area) => (
+            <Card key={area.title}>
+              <h3 className="text-base font-semibold text-slate-900">{area.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{area.description}</p>
+            </Card>
+          ))}
         </div>
       </Section>
 
       <Section
         title="Learning Log"
-        intro="Progress notes, reflections, and small wins - tagged so I can spot patterns over time."
+        intro="Short updates on what I changed, what I learned, and why it matters for e-commerce execution, reporting, and AI-enabled delivery."
       >
-        {/* Tag chips */}
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6 flex flex-wrap gap-2" role="tablist" aria-label="Filter learning posts by tag">
           {allTags.map((tag) => {
             const isActive = tag === activeTag;
 
@@ -65,11 +65,12 @@ export default function LearningClient() {
                 type="button"
                 onClick={() => setActiveTag(tag)}
                 className={[
-                  'inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium transition',
+                  'inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2',
                   isActive
                     ? 'border-slate-300 bg-slate-900 text-white'
                     : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900'
                 ].join(' ')}
+                aria-pressed={isActive}
               >
                 {tag}
               </button>
@@ -77,13 +78,12 @@ export default function LearningClient() {
           })}
         </div>
 
-        {/* Empty state */}
         {learningPosts.length === 0 ? (
           <div className="mt-6">
             <Card>
               <h3 className="text-lg font-semibold text-slate-900">Coming soon</h3>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-                I’m building this as a lightweight learning journal - short updates, tagged by topic. Check back soon.
+                I’m building this as a lightweight journal of practical experiments and working notes.
               </p>
             </Card>
           </div>
@@ -91,43 +91,35 @@ export default function LearningClient() {
           <div className="mt-6 space-y-4">
             {filteredPosts.map((post) => (
               <Card key={`${post.date}-${post.title}`}>
-  <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
-    
-    {/* Date column */}
-    <div className="text-sm text-slate-500">
-      <p className="font-medium text-slate-700">{formatDate(post.date)}</p>
-      {post.sprint ? (
-        <p className="mt-1 text-xs text-slate-500">Focus: {post.sprint}</p>
-      ) : null}
-    </div>
+                <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
+                  <div className="text-sm text-slate-500">
+                    <p className="font-medium text-slate-700">{formatDate(post.date)}</p>
+                    {post.sprint ? <p className="mt-1 text-xs text-slate-500">Focus: {post.sprint}</p> : null}
+                  </div>
 
-    {/* Content column */}
-    <div>
-      <div className="flex flex-wrap gap-2 mb-2">
-        {post.tags.map((tag) => (
-          <button
-            key={`${post.title}-${tag}`}
-            type="button"
-            onClick={() => setActiveTag(tag)}
-            className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900"
-            aria-label={`Filter by tag: ${tag}`}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
+                  <div>
+                    <div className="mb-2 flex flex-wrap gap-2">
+                      {post.tags.map((tag) => (
+                        <button
+                          key={`${post.title}-${tag}`}
+                          type="button"
+                          onClick={() => setActiveTag(tag)}
+                          className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+                          aria-label={`Filter by tag: ${tag}`}
+                        >
+                          {tag}
+                        </button>
+                      ))}
+                    </div>
 
-      <h3 className="text-xl font-semibold text-slate-900">{post.title}</h3>
+                    <h3 className="text-xl font-semibold text-slate-900">{post.title}</h3>
 
-      <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
-        {post.summary}
-      </p>
-    </div>
-  </div>
-</Card>
+                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">{post.summary}</p>
+                  </div>
+                </div>
+              </Card>
             ))}
 
-            {/* No results state */}
             {learningPosts.length > 0 && filteredPosts.length === 0 ? (
               <Card>
                 <h3 className="text-lg font-semibold text-slate-900">No posts for “{activeTag}” yet</h3>
