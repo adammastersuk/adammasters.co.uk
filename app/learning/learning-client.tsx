@@ -6,45 +6,27 @@ import { Section } from '@/components/section';
 import { learningFocusAreas } from '@/data/learning-focus-areas';
 import { learningPosts } from '@/data/learning-posts';
 
-function formatDate(iso: string) {
-  const [y, m, d] = iso.split('-').map(Number);
-  const date = new Date(Date.UTC(y, m - 1, d));
-  return date.toLocaleDateString('en-GB', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-    timeZone: 'UTC'
-  });
-}
-
 export default function LearningClient() {
-  const [activeTag, setActiveTag] = useState<string>('All');
-
-  const sortedPosts = useMemo(() => {
-    return [...learningPosts].sort((a, b) => b.date.localeCompare(a.date));
-  }, []);
-
-  const allTags = useMemo(() => {
-    const tags = new Set<string>();
-    learningPosts.forEach((post) => post.tags.forEach((t) => tags.add(t)));
-    return ['All', ...Array.from(tags).sort((a, b) => a.localeCompare(b))];
-  }, []);
-
-  const filteredPosts = useMemo(() => {
-    if (activeTag === 'All') return sortedPosts;
-    return sortedPosts.filter((post) => post.tags.includes(activeTag));
-  }, [activeTag, sortedPosts]);
+  const [activeCategory, setActiveCategory] = useState('All');
+  const categories = useMemo(
+    () => ['All', ...Array.from(new Set(learningPosts.map((post) => post.category)))],
+    []
+  );
+  const filteredPosts =
+    activeCategory === 'All' ? learningPosts : learningPosts.filter((post) => post.category === activeCategory);
 
   return (
     <>
       <Section
-        title="Learning"
-        intro="I treat learning as part of delivery, not a side activity. The focus is practical: build something, test it in context, and carry the useful parts into commercial work."
+        eyebrow="Working notes"
+        headingLevel={1}
+        title="Learning, testing and noticing"
+        intro="An evergreen collection of useful lessons from ecommerce work. These are observations in progress, not articles written to fill a publishing schedule."
       >
         <div className="grid gap-4 md:grid-cols-3">
           {learningFocusAreas.map((area) => (
             <Card key={area.title}>
-              <h3 className="text-base font-semibold text-slate-900">{area.title}</h3>
+              <h2 className="text-base font-semibold text-slate-900">{area.title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{area.description}</p>
             </Card>
           ))}
@@ -52,84 +34,46 @@ export default function LearningClient() {
       </Section>
 
       <Section
-        title="Learning Log"
-        intro="Short updates on what I changed, what I learned, and why it matters for e-commerce execution, reporting, and AI-enabled delivery."
+        title="The collection"
+        intro="Concise notes on ecommerce management, data, technology and the practical use of AI."
       >
-        <div className="mt-6 flex flex-wrap gap-2" role="tablist" aria-label="Filter learning posts by tag">
-          {allTags.map((tag) => {
-            const isActive = tag === activeTag;
-
+        <div className="flex flex-wrap gap-2" aria-label="Filter notes by category">
+          {categories.map((category) => {
+            const isActive = category === activeCategory;
             return (
               <button
-                key={tag}
+                key={category}
                 type="button"
-                onClick={() => setActiveTag(tag)}
-                className={[
-                  'inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2',
+                onClick={() => setActiveCategory(category)}
+                className={`min-h-11 rounded-full border px-4 py-2 text-sm font-medium focus-ring ${
                   isActive
-                    ? 'border-slate-300 bg-slate-900 text-white'
-                    : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:text-slate-900'
-                ].join(' ')}
+                    ? 'border-rail bg-rail text-white'
+                    : 'border-slate-300 bg-white text-slate-700 hover:border-slate-500'
+                }`}
                 aria-pressed={isActive}
               >
-                {tag}
+                {category}
               </button>
             );
           })}
         </div>
 
-        {learningPosts.length === 0 ? (
-          <div className="mt-6">
-            <Card>
-              <h3 className="text-lg font-semibold text-slate-900">Coming soon</h3>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-                I’m building this as a lightweight journal of practical experiments and working notes.
-              </p>
+        <div className="mt-7 grid gap-5 md:grid-cols-2">
+          {filteredPosts.map((post) => (
+            <Card key={post.title} className="flex h-full flex-col">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-rail">{post.category}</p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">{post.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{post.summary}</p>
+              <div className="mt-auto flex flex-wrap gap-2 pt-5" aria-label="Topics">
+                {post.tags.map((tag) => (
+                  <span key={tag} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </Card>
-          </div>
-        ) : (
-          <div className="mt-6 space-y-4">
-            {filteredPosts.map((post) => (
-              <Card key={`${post.date}-${post.title}`}>
-                <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
-                  <div className="text-sm text-slate-500">
-                    <p className="font-medium text-slate-700">{formatDate(post.date)}</p>
-                    {post.sprint ? <p className="mt-1 text-xs text-slate-500">Focus: {post.sprint}</p> : null}
-                  </div>
-
-                  <div>
-                    <div className="mb-2 flex flex-wrap gap-2">
-                      {post.tags.map((tag) => (
-                        <button
-                          key={`${post.title}-${tag}`}
-                          type="button"
-                          onClick={() => setActiveTag(tag)}
-                          className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
-                          aria-label={`Filter by tag: ${tag}`}
-                        >
-                          {tag}
-                        </button>
-                      ))}
-                    </div>
-
-                    <h3 className="text-xl font-semibold text-slate-900">{post.title}</h3>
-
-                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">{post.summary}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-
-            {learningPosts.length > 0 && filteredPosts.length === 0 ? (
-              <Card>
-                <h3 className="text-lg font-semibold text-slate-900">No posts for “{activeTag}” yet</h3>
-                <p className="mt-2 text-sm text-slate-600">
-                  I’ll add notes here as I learn and ship. For now, try another tag.
-                </p>
-              </Card>
-            ) : null}
-          </div>
-        )}
+          ))}
+        </div>
       </Section>
     </>
   );

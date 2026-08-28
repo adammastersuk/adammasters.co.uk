@@ -5,9 +5,10 @@ import { Section } from '@/components/section';
 import { buildProjects } from '@/data/builds';
 
 export const metadata: Metadata = {
-  title: 'Projects and Builds: Workflow Tools, Reporting, and Experiments',
+  title: 'Ecommerce Projects and Practical Builds',
   description:
-    'Proof-of-work projects by Adam Masters across e-commerce workflow tools, reporting systems, AI-assisted processes, and lightweight product builds.'
+    'Selected projects by Adam Masters across ecommerce reporting, operations, AI-assisted workflows and focused internal tools.',
+  alternates: { canonical: '/builds' }
 };
 
 const buildAreas = [
@@ -54,13 +55,15 @@ export default function BuildsPage() {
 
   return (
     <Section
-      title="Projects and Builds"
-      intro="A practical portfolio of tools and experiments. Each project is built to solve a real problem, test a specific idea, or improve execution quality."
+      eyebrow="Proof of work"
+      headingLevel={1}
+      title="Ecommerce projects and practical builds"
+      intro="A focused record of problems I have worked on, my involvement and what the work taught me. In-progress work is labelled rather than presented as a finished case study."
     >
       <div className="mt-6 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-600">
         <p>
-          This page is the proof-of-work layer of the site. It covers internal-style workflow builds, AI-enabled
-          experimentation, and smaller interaction projects that sharpen product craft.
+          The main collection is grounded in ecommerce operations, reporting and analysis. Smaller browser experiments
+          are retained separately because they helped me learn how to scope, test and ship with AI-assisted development.
         </p>
         <p>
           Where outcomes are still in progress, I document the learning honestly instead of over-claiming results.
@@ -114,7 +117,7 @@ export default function BuildsPage() {
                   <span className="font-medium text-slate-800">Problem:</span> {project.why}
                 </p>
                 <p>
-                  <span className="font-medium text-slate-800">Action:</span> {project.what}
+                  <span className="font-medium text-slate-800">My involvement and solution:</span> {project.what}
                 </p>
                 <p>
                   <span className="font-medium text-slate-800">Outcome / learning:</span> {project.learned}

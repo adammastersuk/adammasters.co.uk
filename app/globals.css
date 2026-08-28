@@ -7,11 +7,19 @@
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply bg-[#fbfbf9] text-slate-800 antialiased;
 }
 
 a {
   @apply transition-colors;
+}
+
+:focus-visible {
+  scroll-margin: 6rem;
+}
+
+.focus-ring {
+  @apply transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rail focus-visible:ring-offset-2;
 }
 
 main > .editorial-section:nth-of-type(even) {
@@ -19,5 +27,14 @@ main > .editorial-section:nth-of-type(even) {
 }
 
 ::selection {
-  background-color: rgb(15 23 42 / 0.14);
+  background-color: rgb(15 61 46 / 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
