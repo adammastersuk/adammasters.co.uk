@@ -3,16 +3,18 @@ import { Card } from '@/components/card';
 import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
-  title: 'Contact: Senior E-Commerce and Digital Leadership Conversations',
+  title: 'Contact',
   description:
-    'Contact Adam Masters for senior e-commerce, digital trading, commercial growth, and practical AI workflow conversations.'
+    'Contact Adam Masters about ecommerce management, trading, customer experience, technology, data and automation.',
+  alternates: { canonical: '/contact' }
 };
 
 export default function ContactPage() {
   return (
     <Section
       title="Contact"
-      intro="If you’re interested in conversations around senior e-commerce leadership, digital trading performance, or commercially accountable delivery, email is the best route."
+      headingLevel={1}
+      intro="For conversations about ecommerce management, trading, customer experience, technology or practical automation, email is the best route."
     >
       <Card className="max-w-2xl">
         <div className="space-y-8">
@@ -28,8 +30,7 @@ export default function ContactPage() {
               </a>
             </div>
             <p className="max-w-xl text-sm leading-relaxed text-slate-600">
-              Best for conversations around e-commerce growth, digital trading strategy, reporting, or practical
-              collaboration.
+              Best for relevant professional conversations. I aim to reply clearly and without unnecessary back and forth.
             </p>
           </div>
 

@@ -5,110 +5,111 @@ import { Container } from '@/components/container';
 import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
-  title: 'E-Commerce Manager: Digital Trading, Reporting, and AI Workflows',
+  title: 'E-Commerce Manager',
   description:
-    'Adam Masters leads e-commerce trading at Bents Garden & Home, combining BigCommerce execution, GA4 and Search Console insight, CRO, and practical AI-assisted workflows.'
+    'Adam Masters is E-Commerce Manager at Bents Garden & Home, working across trading, customer experience, ecommerce technology, data, automation and practical AI implementation.',
+  alternates: { canonical: '/' }
 };
 
-const pillars = [
+const capabilities = [
   {
-    title: 'Work Profile',
-    description:
-      'Commercial ownership, digital trading cadence, stakeholder reporting, and platform experience across BigCommerce, GA4, GSC, Dotdigital, and Clerk.',
-    href: '/work'
+    title: 'Ecommerce',
+    description: 'Trading, onsite merchandising, conversion, promotional activity and customer journey improvement.',
+    tools: 'BigCommerce · product presentation · CRO'
   },
   {
-    title: 'Projects & Builds',
-    description:
-      'Proof-of-work projects spanning workflow automation, reporting tools, practical AI experiments, and lightweight product builds.',
-    href: '/builds'
+    title: 'Data & insight',
+    description: 'Performance reporting, product analysis and onsite search insight that lead to clear priorities.',
+    tools: 'GA4 · Search Console · Looker Studio'
   },
   {
-    title: 'Learning Log',
-    description:
-      'Short updates on what I am testing, what changed, and what those learnings mean for commercial e-commerce delivery.',
-    href: '/learning'
+    title: 'Technology',
+    description: 'Integrations, product feeds, APIs and inventory flows across ecommerce systems and partners.',
+    tools: 'BigCommerce · Patchworks · ERP data flows'
   },
   {
-    title: 'Contact',
-    description: 'Open for senior e-commerce, digital trading, and commercially focused leadership conversations.',
-    href: '/contact'
+    title: 'AI & automation',
+    description: 'AI-assisted analysis, internal tools, service agents and repeatable workflows for real team problems.',
+    tools: 'AI-assisted development · agents · automation'
   }
 ];
 
-const focusAreas = [
-  'E-Commerce Manager at Bents Garden & Home',
-  'BigCommerce trading, merchandising, CRO, and customer journey optimisation',
-  'Performance reporting via GA4, GSC, Dotdigital, Clerk, and Windsor.ai',
-  'AI-assisted workflows for faster insight generation and operational execution'
+const selectedWork = [
+  {
+    label: 'Reporting & decision support',
+    title: 'Turning weekly performance data into priorities',
+    description:
+      'A repeatable reporting workflow that brings commercial inputs together, frames risks and opportunities, and makes the next actions clear.'
+  },
+  {
+    label: 'Ecommerce operations',
+    title: 'Removing friction from product image preparation',
+    description:
+      'A focused browser tool for batch resizing, consistent presets and export controls, built around a repetitive catalogue task.'
+  },
+  {
+    label: 'AI implementation',
+    title: 'Testing AI-assisted ecommerce analysis',
+    description:
+      'A structured workflow for using connected data and AI to support first-pass analysis without handing over the commercial judgement.'
+  }
 ];
 
 export default function HomePage() {
   return (
     <>
-      <Section className="pt-6 pb-18">
+      <section className="border-b border-slate-200/80 pb-16 pt-12 sm:pb-20 sm:pt-16 lg:pb-24 lg:pt-20">
         <Container>
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Adam Masters</p>
-
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-            Senior e-commerce operator focused on profitable digital trading and clear commercial execution.
-          </h1>
-
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-700">
-            I currently lead e-commerce trading at Bents Garden &amp; Home. My role combines day-to-day trading
-            delivery with strategic commercial ownership across conversion, margin, customer journey performance, and
-            cross-functional execution.
-          </p>
-
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-600">
-            I build practical systems to reduce noise: structured reporting, clearer trading rhythm, and AI-assisted
-            workflows that help teams move from data to action faster.
-          </p>
-
-          <ul className="mt-6 grid gap-2 text-sm leading-relaxed text-slate-700 md:grid-cols-2">
-            {focusAreas.map((area) => (
-              <li key={area} className="rounded-lg border border-slate-200 bg-white px-3 py-2">
-                {area}
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/work"
-              className="inline-flex items-center rounded-full border border-slate-900 bg-slate-900 px-6 py-3 text-sm font-medium text-white hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
-            >
-              View Work Profile
-            </Link>
-
-            <Link
-              href="/builds"
-              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-800 hover:border-slate-400 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
-            >
-              Explore Projects
-            </Link>
+          <div className="max-w-5xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-rail">E-Commerce Manager</p>
+            <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.08] tracking-[-0.035em] text-slate-950 sm:text-5xl lg:text-6xl">
+              Commercial ecommerce, improved through technology, data and customer experience.
+            </h1>
+            <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-700 sm:text-xl">
+              I’m Adam Masters, E-Commerce Manager at Bents Garden &amp; Home. I work across trading, merchandising,
+              integrations, reporting and practical AI implementation to solve commercial and operational problems.
+            </p>
+            <p className="mt-4 max-w-3xl leading-7 text-slate-600">
+              I am comfortable moving from a customer journey or performance question into the systems underneath it,
+              then working with teams and technology partners or building a focused solution myself.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href="/work" className="focus-ring inline-flex min-h-11 items-center rounded-full bg-rail px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-950">
+                See how I work
+              </Link>
+              <Link href="/builds" className="focus-ring inline-flex min-h-11 items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-slate-500">
+                View selected projects
+              </Link>
+            </div>
           </div>
         </Container>
-      </Section>
+      </section>
 
-      <Section
-        title="Explore"
-        intro="A concise overview of how I lead, what I build, and how I keep improving commercially useful execution."
-      >
+      <Section eyebrow="Capabilities" title="Commercial thinking, hands-on delivery" intro="Capabilities come first. Platforms are useful when they help a team make better decisions, serve customers or operate more reliably.">
         <div className="grid gap-5 md:grid-cols-2">
-          {pillars.map((pillar) => (
-            <Card key={pillar.title}>
-              <h3 className="text-xl font-semibold text-slate-900">{pillar.title}</h3>
-              <p className="mt-3 text-slate-600">{pillar.description}</p>
-
-              <Link
-                href={pillar.href}
-                className="mt-4 inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-300 hover:text-slate-900"
-              >
-                Visit {pillar.title}
-              </Link>
+          {capabilities.map((capability) => (
+            <Card key={capability.title}>
+              <h3 className="text-xl font-semibold text-slate-900">{capability.title}</h3>
+              <p className="mt-3 leading-7 text-slate-600">{capability.description}</p>
+              <p className="mt-5 border-t border-slate-100 pt-4 text-xs font-medium uppercase tracking-wide text-slate-500">{capability.tools}</p>
             </Card>
           ))}
+        </div>
+      </Section>
+
+      <Section eyebrow="Selected work" title="Evidence through useful work" intro="Projects and operating workflows grounded in real ecommerce needs. No invented case-study theatre.">
+        <div className="grid gap-5 lg:grid-cols-3">
+          {selectedWork.map((item) => (
+            <Card key={item.title} className="flex h-full flex-col">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-rail">{item.label}</p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">{item.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{item.description}</p>
+            </Card>
+          ))}
+        </div>
+        <div className="mt-7 flex flex-wrap gap-5 text-sm font-semibold">
+          <Link href="/builds" className="focus-ring rounded-sm text-rail underline decoration-emerald-800/30 underline-offset-4 hover:decoration-rail">Explore the project detail →</Link>
+          <Link href="/learning" className="focus-ring rounded-sm text-slate-700 underline decoration-slate-300 underline-offset-4 hover:text-slate-950">Read working notes →</Link>
         </div>
       </Section>
     </>

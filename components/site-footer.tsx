@@ -7,13 +7,13 @@ export function SiteFooter() {
       <Container>
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Adam Masters. Commercially focused digital leadership, delivered practically.
+            © {new Date().getFullYear()} Adam Masters. E-Commerce Manager based in the North West.
           </p>
           <Link
             href="/contact"
             className="text-sm font-medium text-slate-700 underline decoration-slate-300 underline-offset-4 transition hover:text-slate-900 hover:decoration-slate-500"
           >
-            Interested in conversations around digital trading and e-commerce growth
+            Get in touch
           </Link>
         </div>
       </Container>

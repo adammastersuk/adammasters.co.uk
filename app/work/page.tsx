@@ -4,212 +4,103 @@ import { Card } from '@/components/card';
 import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
-  title: 'Work: E-Commerce Leadership and Digital Trading',
+  title: 'Work and Ecommerce Capabilities',
   description:
-    'Professional profile of Adam Masters, E-Commerce Manager at Bents Garden & Home, covering commercial ownership, digital trading, reporting, and optimisation delivery.'
+    'Adam Masters is E-Commerce Manager at Bents Garden & Home. Explore his work across trading, merchandising, customer experience, reporting, integrations, automation and AI.',
+  alternates: { canonical: '/work' }
 };
-
-const METRICS = [
-  {
-    label: 'Revenue growth',
-    value: '+27%',
-    detail: 'Year-on-year digital revenue growth'
-  },
-  {
-    label: 'Average selling price',
-    value: '+8.8%',
-    detail: 'Year-on-year improvement in ASP'
-  },
-  {
-    label: 'Operating rhythm',
-    value: 'Weekly',
-    detail: 'Structured trading cadence and reporting governance'
-  },
-  {
-    label: 'Commercial focus',
-    value: 'Margin + CX',
-    detail: 'Balancing profitable growth with customer experience'
-  }
-];
 
 const capabilityAreas = [
   {
-    title: 'Commercial ownership',
-    points: [
-      'Own weekly and seasonal digital trading priorities against revenue, margin, and conversion goals.',
-      'Translate performance trends into practical actions across product mix, promotions, and onsite merchandising.',
-      'Maintain execution discipline across campaigns, launches, and customer journey moments.'
-    ]
+    title: 'Ecommerce management',
+    summary: 'Running and improving the day-to-day ecommerce operation.',
+    points: ['Trading and promotional priorities', 'Onsite merchandising and product presentation', 'Category, landing-page and customer journey optimisation']
   },
   {
-    title: 'Performance and reporting',
-    points: [
-      'Build decision-ready reporting using GA4, Google Search Console, Dotdigital, Clerk, and Windsor.ai inputs.',
-      'Create clear weekly insight packs for stakeholders with actions, risks, and commercial implications.',
-      'Use reporting as an operating tool, not just a retrospective dashboard.'
-    ]
+    title: 'Data & insight',
+    summary: 'Finding the commercial question behind the numbers.',
+    points: ['GA4 and Search Console analysis', 'Product, channel and onsite search performance', 'Reporting that turns evidence into implementation priorities']
   },
   {
-    title: 'Growth and optimisation',
-    points: [
-      'Lead CRO and customer journey improvements across navigation, product discovery, and checkout pathways.',
-      'Align SEO, PPC, and trading priorities so channel activity compounds rather than conflicts.',
-      'Support better retention through practical segmentation, messaging, and lifecycle optimisation.'
-    ]
+    title: 'Ecommerce technology',
+    summary: 'Understanding how the storefront and its connected systems work together.',
+    points: ['BigCommerce management and troubleshooting', 'ERP, middleware, product feed and inventory flows', 'Working with developers, agencies and technology partners']
   },
   {
-    title: 'Leadership and collaboration',
-    points: [
-      'Work cross-functionally with marketing, merchandising, operations, and customer service teams.',
-      'Set clear priorities and communicate trade-offs early so teams can execute with confidence.',
-      'Combine hands-on delivery with strategic direction to keep momentum high and outcomes measurable.'
-    ]
+    title: 'AI & automation',
+    summary: 'Applying newer tools to specific team and customer problems.',
+    points: ['AI-assisted analysis and repeatable reporting', 'Internal tools built through AI-assisted development', 'Agent knowledge, workflow automation and practical guardrails']
   }
 ];
 
-const tools = {
-  commerce: ['BigCommerce', 'Clerk', 'Patchworks', 'GoDataFeed', 'ProductHero'],
-  analytics: ['GA4', 'Google Search Console', 'Looker Studio', 'Google Merchant Center', 'Google Ads'],
-  crm: ['Dotdigital', 'Attentive', 'Feefo', 'Gnatta'],
-  workflow: ['Windsor.ai', 'Zapier', 'Structured weekly trading and reporting cadence']
-};
+const toolGroups = [
+  { title: 'Commerce & integration', items: ['BigCommerce', 'Patchworks', 'Clerk', 'GoDataFeed', 'ProductHero'] },
+  { title: 'Measurement & acquisition', items: ['GA4', 'Google Search Console', 'Looker Studio', 'Merchant Center', 'Google Ads'] },
+  { title: 'Customer & retention', items: ['Dotdigital', 'Attentive', 'Feefo', 'Gnatta'] },
+  { title: 'Workflow & automation', items: ['Windsor.ai', 'Zapier', 'AI-assisted development', 'Structured reporting workflows'] }
+];
 
 export default function WorkPage() {
   return (
     <>
       <Section
-        title="Work"
-        intro={
-          <>
-            I am E-Commerce Manager at{' '}
-            <a
-              href="https://www.bents.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-slate-900"
-            >
-              Bents Garden &amp; Home
-            </a>
-            . I lead digital trading performance with accountability for commercial outcomes, customer experience, and
-            reliable delivery.
-          </>
-        }
+        eyebrow="Work profile"
+        headingLevel={1}
+        title="E-Commerce Manager at Bents Garden & Home"
+        intro="I sit between the commercial plan, the customer experience and the technology that makes ecommerce run. My role combines day-to-day management with the work needed to make the operation clearer, more useful and more reliable."
       >
-        <p className="max-w-3xl text-base leading-relaxed text-slate-600">
-          My day-to-day role sits between strategy and execution: setting priorities, turning data into action,
-          coordinating stakeholders, and ensuring work lands in market in a way that improves revenue quality,
-          profitability, and customer outcomes.
-        </p>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {METRICS.map((metric) => (
-            <div key={metric.label} className="rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm">
-              <p className="text-xs font-medium uppercase tracking-wide text-slate-500">{metric.label}</p>
-              <p className="mt-2 text-2xl font-semibold text-slate-900">{metric.value}</p>
-              <p className="mt-1 text-sm leading-relaxed text-slate-600">{metric.detail}</p>
-            </div>
-          ))}
+        <div className="grid gap-5 lg:grid-cols-[1.35fr_0.65fr]">
+          <Card>
+            <h2 className="text-xl font-semibold text-slate-900">How I approach the role</h2>
+            <p className="mt-4 leading-7 text-slate-600">
+              I move between trading decisions, customer journeys, performance data and connected systems. That might
+              mean improving how a category is merchandised, investigating a stock-flow problem, shaping a weekly
+              report or testing whether automation can remove repetitive work.
+            </p>
+            <p className="mt-4 leading-7 text-slate-600">
+              I stay hands-on while working across merchandising, marketing, operations, customer service and external
+              technology partners. The aim is not more activity. It is a better decision and a dependable route to implementation.
+            </p>
+          </Card>
+          <aside className="rounded-2xl bg-rail p-6 text-white">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-100">Current scope</p>
+            <ul className="mt-4 space-y-3 text-sm leading-6 text-emerald-50">
+              <li>Commercial ecommerce management</li>
+              <li>BigCommerce and connected systems</li>
+              <li>Customer experience and optimisation</li>
+              <li>Reporting, automation and AI implementation</li>
+            </ul>
+          </aside>
         </div>
       </Section>
 
-      <Section
-        title="Where I Add Value"
-        intro="Senior-level impact comes from consistent commercial judgement and dependable execution across the full e-commerce journey."
-      >
+      <Section eyebrow="Capabilities" title="Where I contribute" intro="Four connected areas, with commercial priorities and customer outcomes at the centre.">
         <div className="grid gap-5 md:grid-cols-2">
           {capabilityAreas.map((area) => (
             <Card key={area.title}>
               <h3 className="text-lg font-semibold text-slate-900">{area.title}</h3>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-600">
-                {area.points.map((point) => (
-                  <li key={point}>• {point}</li>
-                ))}
+              <p className="mt-2 text-sm text-slate-500">{area.summary}</p>
+              <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-700">
+                {area.points.map((point) => <li key={point} className="flex gap-3"><span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-rail" />{point}</li>)}
               </ul>
             </Card>
           ))}
         </div>
       </Section>
 
-      <Section
-        title="Platforms and Operating Stack"
-        intro="I use platforms as part of a wider operating system: clear priorities, clean data, and practical execution discipline."
-      >
-        <div className="grid gap-5 md:grid-cols-2">
-          <Card>
-            <h3 className="text-sm font-semibold text-slate-900">Commerce and trading</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {tools.commerce.map((item) => (
-                <span
-                  key={item}
-                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                >
-                  {item}
-                </span>
-              ))}
+      <Section title="Tools in context" intro="The stack supports the work. It is not a substitute for understanding the commercial or operational problem.">
+        <div className="grid gap-x-8 gap-y-7 md:grid-cols-2">
+          {toolGroups.map((group) => (
+            <div key={group.title} className="border-t border-slate-300 pt-4">
+              <h3 className="text-sm font-semibold text-slate-900">{group.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{group.items.join(' · ')}</p>
             </div>
-          </Card>
-
-          <Card>
-            <h3 className="text-sm font-semibold text-slate-900">Analytics and acquisition</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {tools.analytics.map((item) => (
-                <span
-                  key={item}
-                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </Card>
-
-          <Card>
-            <h3 className="text-sm font-semibold text-slate-900">CRM and customer retention</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {tools.crm.map((item) => (
-                <span
-                  key={item}
-                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </Card>
-
-          <Card>
-            <h3 className="text-sm font-semibold text-slate-900">Workflow and reporting enablement</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {tools.workflow.map((item) => (
-                <span
-                  key={item}
-                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </Card>
+          ))}
         </div>
-
-        <Card className="mt-6">
-          <h3 className="text-lg font-semibold text-slate-900">Selected initiatives</h3>
-          <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-600">
-            <li>• Strengthened weekly trading governance and ownership clarity across teams.</li>
-            <li>• Introduced more structured executive reporting with clearer recommendations and risk framing.</li>
-            <li>• Improved feed and paid-channel alignment to support stronger product visibility and spend quality.</li>
-            <li>• Embedded practical AI-assisted workflows for faster analysis and delivery support.</li>
-          </ul>
-
-          <div className="mt-5">
-            <Link
-              href="/builds"
-              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800 hover:border-slate-400 hover:text-slate-900"
-            >
-              View proof-of-work projects
-            </Link>
-          </div>
-        </Card>
+        <div className="mt-10 flex flex-wrap gap-4">
+          <Link href="/builds" className="focus-ring inline-flex min-h-11 items-center rounded-full bg-rail px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-950">See project evidence</Link>
+          <Link href="/learning" className="focus-ring inline-flex min-h-11 items-center rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 hover:border-slate-500">Read working notes</Link>
+        </div>
       </Section>
     </>
   );

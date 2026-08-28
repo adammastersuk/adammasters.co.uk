@@ -4,7 +4,8 @@ import { Section } from '@/components/section';
 
 export const metadata: Metadata = {
   title: 'Music',
-  description: 'Music background, practice themes, and ongoing recording plans for Adam Masters.'
+  description: 'Music background, practice themes, and ongoing recording plans for Adam Masters.',
+  alternates: { canonical: '/music' }
 };
 
 const musicInfluences = {
@@ -49,6 +50,7 @@ export default function MusicPage() {
     <>
       <Section
         title="Music"
+        headingLevel={1}
         intro="Music shaped how I listen, how I practice, and how I approach progress in every part of life."
       >
         <Card>

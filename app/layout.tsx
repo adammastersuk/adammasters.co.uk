@@ -10,26 +10,23 @@ export const metadata: Metadata = {
     template: '%s | Adam Masters'
   },
   description:
-    'Adam Masters is an E-Commerce Manager focused on digital trading, BigCommerce execution, GA4 reporting, customer journey optimisation, and practical AI workflows.',
+    'Adam Masters is an E-Commerce Manager working across trading, customer experience, ecommerce technology, data, automation and practical AI implementation.',
   keywords: [
     'E-Commerce Manager',
-    'Digital Trading',
+    'Ecommerce Management',
     'BigCommerce',
     'GA4',
     'Google Search Console',
     'CRO',
-    'AI Workflows',
-    'E-Commerce Reporting',
+    'Ecommerce Integrations',
+    'Ecommerce Automation',
     'Wigan',
     'North West'
   ],
-  alternates: {
-    canonical: 'https://adammasters.co.uk'
-  },
   openGraph: {
     title: 'Adam Masters | E-Commerce Manager',
     description:
-      'Senior e-commerce and digital trading leader focused on profitable growth, operational clarity, and practical execution.',
+      'Commercial ecommerce management across trading, customer experience, technology, data, automation and AI implementation.',
     url: 'https://adammasters.co.uk',
     siteName: 'Adam Masters',
     images: [
@@ -37,7 +34,7 @@ export const metadata: Metadata = {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Adam Masters professional profile'
+        alt: 'Adam Masters, E-Commerce Manager'
       }
     ],
     locale: 'en_GB',
@@ -47,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Adam Masters | E-Commerce Manager',
     description:
-      'Digital trading, e-commerce reporting, and practical AI-assisted workflow delivery.'
+      'Commercial ecommerce management across trading, technology, data, automation and customer experience.'
   },
   robots: {
     index: true,
@@ -58,9 +55,35 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Adam Masters',
+    url: 'https://adammasters.co.uk',
+    jobTitle: 'E-Commerce Manager',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Bents Garden & Home',
+      url: 'https://www.bents.co.uk'
+    },
+    sameAs: ['https://www.linkedin.com/in/adammasters-digital', 'https://github.com/adammastersuk'],
+    knowsAbout: [
+      'Ecommerce management',
+      'BigCommerce',
+      'Ecommerce analytics',
+      'Ecommerce integrations',
+      'Conversion optimisation',
+      'Workflow automation'
+    ]
+  };
+
   return (
     <html lang="en-GB">
       <body className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema).replace(/</g, '\\u003c') }}
+        />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:text-slate-900 focus:shadow"

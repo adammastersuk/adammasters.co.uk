@@ -5,15 +5,15 @@ export type LearningFocusArea = {
 
 export const learningFocusAreas: LearningFocusArea[] = [
   {
-    title: 'AI and workflow design',
-    description: 'Testing AI-assisted operating patterns that reduce repetitive work and improve execution speed.'
+    title: 'Things I am learning',
+    description: 'How better merchandising, reporting and operating habits turn commercial intent into consistent delivery.'
   },
   {
-    title: 'E-commerce reporting systems',
-    description: 'Building clearer reporting structures that turn data into decisions for weekly trading and stakeholder updates.'
+    title: 'Things I am testing',
+    description: 'Practical uses for AI, automation and lightweight tools inside an ecommerce team.'
   },
   {
-    title: 'Product and delivery craft',
-    description: 'Improving how I scope, ship, and iterate lightweight tools with maintainable architecture and clear UX.'
+    title: 'Things I am noticing',
+    description: 'Patterns in customer behaviour, data, integrations and the details that make ecommerce work.'
   }
 ];
